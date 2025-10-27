@@ -1,0 +1,820 @@
+/* Estilos principales para fondos y textos */
+#ColorBody
+{
+  background-color:#836857;
+}
+#ColorBody2
+{
+  background-color:#F1E8D9;
+}
+#ColorBody3{
+  background-color: #836857;
+}
+.colorNav{
+  background-color: #836857;
+}
+h1{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  
+}
+h2{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #F1E8D9;
+}
+h3{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #F1E8D9;
+}
+p{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #F1E8D9;
+}
+#hoverBotones {
+  margin-bottom: 25%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #F1E8D9;
+  color: #F1E8D9 ;
+
+
+}
+#hoverBotones:hover {
+  margin-bottom: 25%;
+  background-color: #473B32;
+  border: 1px solid #F1E8D9;
+  color: #F1E8D9 ;
+}
+.ColorRedes i {
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+.ColorRedes i:hover {
+    color: #7a7a7a; /* Cambia el color a naranja al hacer hover */
+    transform: scale(1.3); /* Aumenta ligeramente el tamaño del ícono */
+  }
+  
+.btn-close {
+    filter: brightness(0) invert(1); /* Cambia el icono a blanco */
+}
+#LineaRedes {
+    border-right: 1px solid #ffffff ;
+  }
+.LineaFoot{
+  border-top: 1px solid white;
+}
+#MenuEnlaces .nav-link{
+
+    color: #ffffff;
+    transition: color 0.3s ease;
+
+}
+.lineaLogo{
+  position: relative;
+  right: 50%;
+}
+#MenuEnlaces .nav-link:hover {
+    
+    color: #7a7a7a; /* Cambia a color naranja al pasar el mouse */
+    text-decoration: none;
+}
+#offcanvasMenu{
+
+  background-color: #292521; /* Color naranja */
+  
+
+}
+.logoMenu{
+  width: 200px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .logoMenu {
+    width: 200px; /* Tamaño para tabletas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .logoMenu {
+    width: 400px;
+    padding-right: 25px; /* Tamaño para computadoras */
+  }
+}
+.logoHome{
+  width: 100px;
+}
+@media (min-width: 768px) {
+  .logoHome {
+    width: 200px; /* Tamaño para tabletas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .logoHome {
+    width: 200px; /* Tamaño para computadoras */
+  }
+}
+#menutxt{
+
+  font-size: 15px;
+
+}
+@media (min-width: 768px) {
+  #menutxt {
+    font-size: 4rem; /* Tamaño para tabletas */
+  }
+}
+
+@media (min-width: 1200px) {
+  #menutxt {
+    font-size: 2rem; /* Tamaño para computadoras */
+  }
+}
+/*----- BOTON DE CAMBIO DE IDIAMA A INGLES A ESPAÑOL */
+.idiomas{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  
+  border-radius: 50px;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  border: 1px solid #eee;
+}
+.en{
+  color: wheat;
+  
+
+}
+.es{
+  color: #e7e7e7;
+}
+.check{
+  position: relative;
+  width: 50px;
+}
+.check::before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background: #333;
+  border-radius: 25px;
+
+}
+
+.check::after{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #fffbfb;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2 solid #333;
+  box-sizing: border-box;
+}
+.efecto{
+  filter: sepia(90%) contrast(145%) brightness(50%);
+}
+
+.check:checked::after{
+  left: 25px;
+  border: 2px solid wheat;
+}
+
+.check:checked::before{
+  background: wheat;
+}
+
+/* Sección de inicio Imagen Grande */
+.Fondo img
+{
+  height: 100%;
+  width: 100%;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  filter: sepia(90%) contrast(145%) brightness(50%);
+}
+.ImgMouse{
+  filter: sepia(90%) contrast(145%) brightness(50%);
+  transition: filter 0.2s ease;
+
+}
+.ImgMouse:hover {
+  filter: sepia(0%) brightness(75%);
+}
+.text-overlay {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%; 
+  z-index: 1; 
+}
+#btnRedondo{
+  width: 70px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #F1E8D9;
+  color: #F1E8D9 ;
+  border-radius: 100px;
+  font-size: 30px;
+
+}
+#btnRedondo:hover{
+  background-color: #473B32;
+  color: #F1E8D9 ;
+
+}
+/*SECCION RESPONSIVE INCIAL */
+
+.Vincial{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+}
+.letraGrande{
+  font-size: 80px;
+}
+.letraPequeña{
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .text-overlay {
+    top: 50%; /* Tamaño para tabletas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .txtSectionDos {
+    font-size: 4rem; /* Tamaño para computadoras */
+  }
+}
+/*SECCION RESPONSIVE INCIAL */
+@media (max-width: 768px) {
+  .Fondo {
+    height: 100vh; /* Reduce la altura en dispositivos pequeños */
+  }
+  .Vinicial h1 {
+    font-size: 1.8rem; /* Ajusta el tamaño de la fuente en móviles */
+  }
+  .Vinicial p {
+    font-size: 1rem; /* Ajusta el tamaño del párrafo en móviles */
+  }
+}
+@media (max-width: 1200px) {
+  .Vinicial h1 {
+    font-size: 2.5rem; /* Ajusta en tabletas */
+  }
+}
+/*SECCION DOOS */
+
+.contenedor-img{ /* HOVER IMAGENES  */
+  position: relative;
+  display: inline-block;
+}
+.contenedor-img img{
+  display: block;
+  width: 100%;
+}
+
+.link-hover p{
+  display: none;
+  background-color: #292521;
+
+}
+.link-hover :hover p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #292521ab;
+  color: white;
+  text-align: center;
+  
+}
+
+.proyectoImg{
+  width: 55%;
+  max-width: 150px;
+  margin: 10px auto;
+}
+/*SECCION DOOS Responsive Texto */
+.txtSectionDos{
+  font-size: 1.8rem;
+}
+
+.txtH3Dos{
+  font-size: 1.1rem;
+}
+@media (min-width: 768px) {
+  .txtSectionDos {
+    font-size: 4rem; /* Tamaño para tabletas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .txtSectionDos {
+    font-size: 4rem; /* Tamaño para computadoras */
+  }
+}
+/*SECCION Testimonios */
+.tituloTres{
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  .tituloTres {
+    font-size: 4rem; /* Tamaño para tabletas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .tituloTres {
+    font-size: 4rem; /* Tamaño para computadoras */
+  }
+}
+
+
+.txtSectionTres{
+  font-size: 1.2rem;
+}
+.parrafoTres{
+  font-size: 0.8rem;
+
+}
+
+.FondoDleon{
+  position: absolute;
+  top: auto;
+  left: 0%;
+  width: 300px;
+  z-index: -1;
+
+}
+.Dleon-img{
+  overflow: hidden;
+
+}
+.FondoDleonDos{
+  position: absolute;
+  top: auto;
+  right:  0%;
+  width: 400px;
+  z-index: -1;
+
+}
+
+
+/*SECCION Data Viz */
+
+.txtSectionData{
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  .txtSectionData {
+    font-size: 4rem; /* Tamaño para tabletas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .txtSectionData {
+    font-size: 5rem; /* Tamaño para computadoras */
+  }
+}
+.imgData{
+
+  width: 80vh;
+  margin-bottom: 25px;
+
+}
+
+/*SECCION PERIODISTAS*/
+.margenSection{
+
+  margin-top: 10%;
+
+}
+.txtSectionPeriodistas{
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  .txtSectionPeriodistas {
+    font-size: 4rem; /* Tamaño para tabletas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .txtSectionPeriodistas {
+    font-size: 5rem; /* Tamaño para computadoras */
+  }
+}
+.CuadroP{
+  color: #BFC4B2;
+}
+
+/*SECCION SUMAR*/
+.imSemilla{
+  width: 45vh;
+}
+.imgSemillaDos{
+  width: auto;
+}
+
+/*PAGINASTESTIMONIOS*/
+.imgGrande{
+  width: 800px;
+}
+.FondoTestimonios{
+
+  background-image: url(/Img/rectangulo.png);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 65vh
+
+}
+
+.ColorTestimonio{
+  background-color: #A69181;
+  height: 55vh;
+}
+.margentestimonial{
+  margin-top: 10%;
+
+}
+
+.ObjetoImg{
+
+  width: 83vh;
+  height: 48vh;
+}
+/* Cambiar Fondo Modales */
+.modal-custom .modal-content {
+  background-color: #F1E8D9; 
+  color: black; 
+
+}
+.pTestimonio{
+  bottom: 15%;
+  position: relative;
+  font-size: 12px;
+  margin-bottom: 0%;
+
+}
+.pTestimonioDos{
+  top: 30%;
+  right: 35%;
+  position: relative;
+  font-size: 12px;
+  margin-bottom: 0%;
+
+}
+.colorFull{
+  background-color: #292521 ;
+  width: 80%;
+  border-radius: 50px;
+}
+.buscar{
+  width: 90%;
+  background-color: #292521;
+  color: #F1E8D9;
+  border-radius: 20px 0px 0px 20px;
+  margin: 1px solid #ff0000;
+  padding: 10px;
+}
+#BtnBuscar{
+  background-color: transparent;
+  border-color: rgba(255, 0, 0, 0);
+  border-left: 2px rgb(255, 255, 255) solid;
+  border-radius: 0px;
+  color: #F1E8D9 ;
+}
+.buscar::placeholder {
+  color: #F1E8D9; /* Color del texto del placeholder */
+}
+
+
+@media (min-width: 768px) {
+  .pTestimonio {
+    bottom: 6%; /* Tamaño para tabletas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .pTestimonio {
+    bottom: 10%; /* Tamaño para computadoras */
+    font-size: 18px;
+  }
+}
+
+
+.barraModal {
+  max-height: 500px; /*tamño referencia */
+  overflow-y: auto; 
+  padding-right: 10px; 
+}
+.barraModal::-webkit-scrollbar {
+  width: 12px; /* Anchura de la barra de scroll */
+}
+
+.barraModal::-webkit-scrollbar-thumb {
+  background-color: #473B32; 
+  border-radius: 5px; 
+
+}
+
+.barraModal::-webkit-scrollbar-track {
+  background-color: #2925214d; /* Fondo de la barra */
+  border-radius: 5px;
+}
+
+
+
+/* Pagina SECCION PRENSA */
+.imgComitas {
+  align-items: center; /* Centra horizontalmente */
+}
+.tarjeta{
+  background-color: #ffffff00;
+  
+
+  
+}
+.lineaPrensa{
+  border-bottom: 2px solid #ffffff;
+  width: 10%;
+}
+.lineaTarjeta{
+  border: 1px solid #A69181;
+  width: 95%;
+  
+}
+#btnTarjetas{
+  margin-bottom: 25%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #A69181;
+  color: #A69181 ;
+}
+#btnTarjetas:hover{
+  margin-bottom: 25%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #d3b297;
+  color: #d3b297 ;
+}
+
+/* PAGINA SECCION CREDITOS */
+/* Botones acordion */
+.accordion{
+  --bs-accordion-active-color: #000000;
+ 
+}
+.accordion-header .accordion-button{
+  
+  background-color: #F1E8D9;  
+  --bs-accordion-btn-focus-box-shadow:none;
+  color: #836857;
+  font-size: 20px;
+  
+  
+}
+.accordion-header .accordion-button:hover {
+  /* Cambia el fondo al pasar el mouse (opcional) */
+  color: black; /* Cambia el texto a negro al pasar el mouse */
+}
+
+
+.accordion-body{
+  background-color: #F1E8D9;
+  
+  
+}
+.accordion-button::after {
+  display: none;
+}
+.accordion-button::before {
+    content: '\f063'; /* Ícono de Font Awesome */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-left: 25%; /* Alinea a la derecha */
+    transition: transform 0.3s; /* Animación al expandirse */
+    padding-right: 10%;
+    
+
+}
+@media (min-width: 768px) {
+  .accordion-button::before{
+    margin-left: 50%; /* Tamaño para tabletas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .accordion-button::before {
+    margin-left: 65%;/* Tamaño para computadoras */
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+  }
+}
+.accordion-button.collapsed::before {
+  content: '\f060'; /* Cambia el carácter cuando está colapsado */
+}
+
+.accordion-button:not(.collapsed){
+  box-shadow: none;
+}
+
+
+
+.margenCreditos{
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+#contentColaboradores p{
+  color: black;
+}
+
+#contentCreditos p{
+  color: black;
+}
+#contentAgradecimientos p{
+  color: black;
+}
+#btnColaboradores{
+  border: none;
+  color: #836857;
+  background-color: rgba(255, 0, 0, 0);
+  font-size: 28px;
+}
+#btnColaboradores:hover{
+  color: #382d27;
+}
+
+#btnColaboradores:hover,
+#btnColaboradores:focus, /* Aplica el estilo al botón cuando está seleccionado */
+.active-button {
+  color: #382d27; 
+}
+/* ACTIVAR CUANDO SE SELECCIONE */
+
+
+#btnCreditos{
+  border: none;
+  color: #836857;
+  background-color: rgba(255, 0, 0, 0);
+  font-size: 28px;
+}
+#btnCreditos:hover{
+  color: #382d27;
+}
+
+#btnAgradecimientos{
+  border: none;
+  color: #836857;
+  background-color: rgba(255, 0, 0, 0);
+  font-size: 28px;
+}
+#btnAgradecimientos:hover{
+  color: #382d27;
+}
+#btnAgradecimientos:hover,
+#btnAgradecimientos:focus, /* Aplica el estilo al botón cuando está seleccionado */
+.active-button {
+  color: #382d27; 
+}
+/* PAGINA SEMIILLA O CREDITOS*/
+
+.colorSemilla{
+  display: flex;
+  justify-content: center;
+  background-color: #836857;
+
+}
+@media (max-width: 576px) {
+  .colorSemilla {
+    max-height: 50vh;
+  }
+}
+
+.txtSemilla{
+  margin: 10%;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .txtSemilla {
+    font-size: 4rem; /* Tamaño para tabletas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .txtSemilla {
+    font-size: 5rem; /* Tamaño para computadoras */
+  }
+}
+
+.fondoForm{
+  margin-left: 5%;
+  width: 100%;
+  padding: 5%;
+  background-color: #29252185;
+  border-radius: 8px;
+
+}
+@media (min-width: 1200px) {
+  .fondoForm {
+    width: 50%; /* Tamaño para computadoras */
+    margin-left: 10%;
+  }
+}
+.imgForm{
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .imgForm {
+    width: 45%; /* Tamaño para computadoras */
+    
+  }
+}
+#margenForm{
+  margin-top: auto;
+}
+@media (min-width: 1200px) {
+  #margenForm {
+    margin-top: 300px;
+  }
+}
+#btnForm{
+  border: 1px solid #A69181;
+  color: #F1E8D9;
+  background-color: #836857;
+}
+#btnForm:hover{
+  border: 1px solid #A69181;
+  color: #F1E8D9;
+  background-color: #473B32;
+}
+
+.FondoDleonForm{
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  width: 300px;
+  z-index: -1;
+}
+.FondoDleonFormDos{
+  position: absolute;
+  top: auto;
+  right: 0%;
+  width: 800px;
+  z-index: -1;
+}
+.Dleon-imgForm{
+  overflow: hidden;
+}
+#mensajeExito{
+  display: none;
+  background-color: #473B32;
+}
+/*==================================================================================pagina de madres MAFAPO*/
+#Retrato-madre{
+  margin-top: -5rem;
+}
+#Quien-soy{
+  margin: 3rem;
+}
+#la-vida-con-mi-hijo{
+  margin: 3rem;
+}
+#El-dia-perdida{
+  margin: 5rem;
+}
+#mi-vida-hoy{
+  background-image: url("/Img/fondo-mi-vida-hoy.png");
+}
+#content-mi-vida{
+  padding-top: 10rem;
+  margin: 3rem;
+}
+.imagenes-neg{
+  padding: -3rem;
+}
+
+/* FINAL DE CSS */
