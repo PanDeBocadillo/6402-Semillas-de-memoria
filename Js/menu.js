@@ -8,7 +8,7 @@ function crearMenu() {
                 <button class="btn btn-tranparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
                     <img src="Img/menu.svg" alt="" class= "img-fluid">
                 </button>
-                <a href="index.html" class="lineaLogo">
+                <a href="index.html">
                     <img src="Img/LogoHome.png" alt="" class = "img-fluid logoHome">
                 </a>
                  

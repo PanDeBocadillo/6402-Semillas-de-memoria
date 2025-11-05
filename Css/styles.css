@@ -80,8 +80,7 @@ p{
 
 }
 .lineaLogo{
-  position: relative;
-  right: 50%;
+  border-right: 1px solid #ffffff;
 }
 #MenuEnlaces .nav-link:hover {
     
@@ -793,6 +792,221 @@ p{
   display: none;
   background-color: #473B32;
 }
+
+/*CSS "ESCUCHA SUS VOCES"*/
+/* ===== Slider Historias ===== */
+.slider-historias {
+  
+ 
+  color: #fff;
+}
+
+.slider-historias .slides {
+  
+  overflow: hidden;
+  border-radius: 16px;
+  min-height: 603px; /* ajusta según tu Figma */
+  background: #1d1a18;
+}
+
+.slider-historias .slide {
+  position: absolute;
+  inset: 0;
+  display: none;
+  padding: clamp(20px, 3vw, 36px);
+  background-size: cover;
+  background-position: center;
+  transition: opacity 500ms ease, transform 600ms ease;
+  opacity: 0;
+  transform: translateX(3%);
+}
+
+.slider-historias .slide.is-active {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slider-historias .slide .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 16, 14, 0.55); /* oscurece fondo */
+  backdrop-filter: blur(1px);
+  z-index: 0;
+}
+
+.slider-historias .row { position: relative; z-index: 1; }
+.slider-historias .persona-img {
+  width: 100%;
+  max-height: 460px;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 24px rgba(0,0,0,.35));
+}
+
+.slider-historias .content-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+.slider-historias .content-top__cta {
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 600;
+}
+
+.slider-historias .persona-nombre {
+  font-family: var(--heading-font, "Montserrat", system-ui, sans-serif);
+  font-size: clamp(22px, 2.6vw, 34px);
+  letter-spacing: .5px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+.slider-historias .persona-desc {
+  max-width: 60ch;
+  opacity: .95;
+  margin-bottom: 18px;
+}
+
+.slider-historias .content-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* === Centrado inferior de los puntos del slider === */
+.slider-historias .slider-dots {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(16px, 2.6vw, 28px); /* ajusta según Figma */
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 4;
+}
+
+.slider-historias .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.45);
+  border: none;
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.slider-historias .dot[aria-selected="true"] {
+  background: #fff;
+  transform: scale(1.2);
+}
+
+/* Botón audio */
+.slider-historias .btn-audio {
+  border: 2px solid rgba(255,255,255,.6);
+  background: transparent;
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 600;
+  line-height: 1;
+}
+.slider-historias .btn-audio .icon-pause { display: none; }
+.slider-historias .btn-audio[aria-pressed="true"] .icon-play { display: none; }
+.slider-historias .btn-audio[aria-pressed="true"] .icon-pause { display: inline; }
+
+/* Flechas */
+.slider-historias .slider-arrow {
+  position: absolute;
+  translate: 0 -50%;
+  z-index: 3;
+  width: 1px; height: 1px;
+  transition: transform .2s ease, background .2s ease;
+  background-color: #836857 ;
+  border: #836857;
+}
+.slider-historias .slider-arrow:hover { transform: scale(1.04); }
+.slider-historias .slider-arrow.left  { left: -10px; }
+.slider-historias .slider-arrow.right { right: 40px; }
+.slider-historias .slider-arrow span { font-size: 26px; line-height: 1; }
+
+/* Dots */
+.slider-historias .dots {
+  display: flex; gap: 8px; align-items: center;
+}
+.slider-historias .dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: rgba(255,255,255,.45);
+  border: none; cursor: pointer;
+  transition: transform .2s ease, background .2s ease;
+}
+.slider-historias .dot[aria-selected="true"] {
+  background: #fff; transform: scale(1.2);
+}
+
+/* Responsivo */
+@media (max-width: 991.98px) {
+  .slider-historias .slides { min-height: 620px; }
+  .slider-historias .persona-desc { max-width: 70ch; }
+}
+
+@media (max-width: 575.98px) {
+  .slider-historias .slides { min-height: 680px; }
+  .slider-historias .slider-arrow { width: 40px; height: 40px; }
+}
+
+/* Contenedor para posicionar el nombre sobre la imagen */
+.slider-historias .persona-wrap {
+  position: relative;
+  width: 100%;
+  /* Valores por defecto (puedes sobrescribir por slide con style="--name-left:..; --name-bottom:..") */
+  --name-left: clamp(12px, 2.2vw, 32px);
+  --name-bottom: clamp(10px, 2.2vw, 28px);
+}
+
+/* Imagen de la persona */
+.slider-historias .persona-img {
+  width: 100%;
+  max-height: 500px;
+  position: relative;
+  margin-bottom: -27rem;
+}
+
+/* Nombre sobrepuesto (abajo-izquierda por defecto) */
+.slider-historias .persona-name-overlay {
+  position: absolute;
+  left: var(--name-left);
+  bottom: var(--name-bottom);
+  z-index: 2;
+  font-family: var(--heading-font, "Montserrat", system-ui, sans-serif);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: clamp(22px, 4vw, 54px); /* ajusta al tamaño de tu Figma */
+  color: #efe5db; /* beige del mockup */
+  line-height: 1.05;
+  text-shadow: 0 2px 6px rgba(0,0,0,.45); /* legibilidad sobre fondos oscuros */
+  pointer-events: none; /* que no interfiera con clics en la imagen */
+}
+
+/* Opcional: base sutil para contraste extra (desactívala si no la quieres) */
+.slider-historias .persona-name-overlay::before {
+  content: "";
+  position: absolute;
+  inset: -6px -12px -6px -12px;
+  background: linear-gradient(90deg, rgba(0,0,0,.32), rgba(0,0,0,0));
+  border-radius: 6px;
+  z-index: -1;
+}
+
+/* Responsive: si en móvil prefieres bajarlo un poco y reducir tamaño */
+@media (max-width: 575.98px) {
+  .slider-historias .persona-name-overlay {
+    font-size: clamp(18px, 6.4vw, 32px);
+  }
+}
+.content-top__cta-img{
+  padding-right: 5rem;
+ 
+}
 /*==================================================================================pagina de madres MAFAPO*/
 #Retrato-madre{
   margin-top: -5rem;
@@ -816,5 +1030,6 @@ p{
 .imagenes-neg{
   padding: -3rem;
 }
+
 
 /* FINAL DE CSS */
