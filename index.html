@@ -75,7 +75,7 @@
       </div>
     </section>
     
-    <!-- Seccion TESTIMONIOS -->
+    <!-- Seccion TESTIMONIOS 
     <section class="margenSection" >
       <div class="container-fluid px-5 ">
         <div class="FondoDleon">
@@ -178,6 +178,252 @@
 
       </div>
     </section>
+  -->
+    <!-- ===================== CONOCE SUS HISTORIAS (Slider) ===================== -->
+<section id="HistoriasSlider" class="slider-historias position-relative">
+  <div class="container-xl">
+
+    <!-- Flechas globales (usa tus JPG) -->
+    <button class="slider-arrow left" aria-label="Anterior">
+      <img src="Img/ESV/Landing_Slider/BtnIzq.png" alt="Anterior"><!-- REEMPLAZA -->
+    </button>
+    <button class="slider-arrow right" aria-label="Siguiente">
+      <img src="Img/ESV/Landing_Slider/BtnDer.png" alt="Siguiente"><!-- REEMPLAZA -->
+    </button>
+
+    <!-- Slides: autoplay y tiempo entre pases -->
+    <div class="slides" data-autoplay="true" data-interval="7000">
+
+      <!-- ========== SLIDE 1 ========== -->
+      <article class="slide is-active"
+               data-bg="Img/ESV/Landing_Slider/BG.png"          <!-- REEMPLAZA (JPG fondo) -->
+               data-audio="assets/historias/audios/testimonio-1.mp3">  <!-- REEMPLAZA (audio) -->
+        <div class="overlay"></div>
+
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-5">
+            <!-- Puedes ajustar posición por slide con las variables CSS: --name-left y --name-bottom -->
+            <div class="persona-wrap" style="--name-left: 28px; --name-bottom: 26px;">
+              <img class="persona-img" src="Img/ESV/Landing_Slider/Ana_img.png" alt="Retrato de Ana Paéz">
+              <span class="persona-name-overlay">ANA PAÉZ</span>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="content">
+
+              <!-- Botón superior hacia testimonios con tu JPG -->
+              <div class="content-top">
+                <a class="content-top__cta-img" href="testimonios.html" aria-label="Conocer su historia">
+                  <img src="assets/historias/botones/btn-conocer.jpg" alt="Conocer su historia"><!-- REEMPLAZA -->
+                </a>
+              </div>
+
+              <!-- Texto -->
+              <h3 class="persona-nombre">Ana Paéz</h3><!-- REEMPLAZA -->
+              <p class="persona-desc">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed eros non eros tincidunt scelerisque. Etiam id neque quam. Cras non pretium nulla”.<!-- REEMPLAZA -->
+              </p>
+
+              <!-- Acciones: audio (dos JPG) + dots -->
+              <div class="content-actions">
+                <button class="btn-audio-img" aria-pressed="false" aria-label="Activar audio">
+                  <img class="icon-play"  src="assets/historias/botones/btn-audio-play.jpg"  alt="Reproducir"><!-- REEMPLAZA -->
+                  <img class="icon-pause" src="assets/historias/botones/btn-audio-pause.jpg" alt="Pausar"><!-- REEMPLAZA -->
+                </button>
+              </div>
+
+              <audio preload="none"></audio>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ========== SLIDE 2 ========== -->
+      <article class="slide"
+               data-bg="Img/ESV/Landing_Slider/BG.png"         <!-- REEMPLAZA -->
+               data-audio="assets/historias/audios/testimonio-2.mp3"><!-- REEMPLAZA -->
+        <div class="overlay"></div>
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-5">
+            <img class="persona-img" src="Img/ESV/Landing_Slider/Blanca_img.png" alt="Retrato de NOMBRE 2"><!-- REEMPLAZA -->
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="content">
+              <div class="content-top">
+                <a class="content-top__cta-img" href="testimonios.html" aria-label="Conocer su historia">
+                  <img src="assets/historias/botones/btn-conocer.jpg" alt="Conocer su historia"><!-- REEMPLAZA -->
+                </a>
+              </div>
+              <h3 class="persona-nombre">Blanca Monroy</h3><!-- REEMPLAZA -->
+              <p class="persona-desc">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed eros non eros tincidunt scelerisque. Etiam id neque quam. Cras non pretium nulla”.<!-- REEMPLAZA --></p>
+              <div class="content-actions">
+                <button class="btn-audio-img" aria-pressed="false" aria-label="Activar audio">
+                  <img class="icon-play"  src="assets/historias/botones/btn-audio-play.jpg"  alt="Reproducir"><!-- REEMPLAZA -->
+                  <img class="icon-pause" src="assets/historias/botones/btn-audio-pause.jpg" alt="Pausar"><!-- REEMPLAZA -->
+                </button>
+              </div>
+              <audio preload="none"></audio>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ========== SLIDE 3 ========== -->
+      <article class="slide"
+               data-bg="Img/ESV/Landing_Slider/BG.png"           
+               data-audio="assets/historias/audios/testimonio-3.mp3">
+        <div class="overlay"></div>
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-5">
+            <img class="persona-img" src="Img/ESV/Landing_Slider/Carmen_img.png" alt="Retrato de NOMBRE 3">
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="content">
+              <div class="content-top">
+                <a class="content-top__cta-img" href="testimonios.html" aria-label="Conocer su historia">
+                  <img src="assets/historias/botones/btn-conocer.jpg" alt="Conocer su historia">
+                </a>
+              </div>
+              <h3 class="persona-nombre">Carmenza Goméz</h3>
+              <p class="persona-desc">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed eros non eros tincidunt scelerisque. Etiam id neque quam. Cras non pretium nulla”.</p>
+              <div class="content-actions">
+                <button class="btn-audio-img" aria-pressed="false" aria-label="Activar audio">
+                  <img class="icon-play"  src="assets/historias/botones/btn-audio-play.jpg"  alt="Reproducir">
+                  <img class="icon-pause" src="assets/historias/botones/btn-audio-pause.jpg" alt="Pausar">
+                </button>
+              </div>
+              <audio preload="none"></audio>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ========== SLIDE 4 ========== -->
+      <article class="slide"
+               data-bg="Img/ESV/Landing_Slider/BG.png"           
+               data-audio="assets/historias/audios/testimonio-4.mp3">
+        <div class="overlay"></div>
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-5">
+            <img class="persona-img" src="Img/ESV/Landing_Slider/Doris_img.png" alt="Retrato de NOMBRE 4">
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="content">
+              <div class="content-top">
+                <a class="content-top__cta-img" href="testimonios.html" aria-label="Conocer su historia">
+                  <img src="assets/historias/botones/btn-conocer.jpg" alt="Conocer su historia">
+                </a>
+              </div>
+              <h3 class="persona-nombre">Doris Tejada</h3>
+              <p class="persona-desc">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed eros non eros tincidunt scelerisque. Etiam id neque quam. Cras non pretium nulla”.</p>
+              <div class="content-actions">
+                <button class="btn-audio-img" aria-pressed="false" aria-label="Activar audio">
+                  <img class="icon-play"  src="assets/historias/botones/btn-audio-play.jpg"  alt="Reproducir">
+                  <img class="icon-pause" src="assets/historias/botones/btn-audio-pause.jpg" alt="Pausar">
+                </button>
+              </div>
+              <audio preload="none"></audio>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ========== SLIDE 5 ========== -->
+      <article class="slide"
+               data-bg="Img/ESV/Landing_Slider/BG.png"           
+               data-audio="assets/historias/audios/testimonio-5.mp3">
+        <div class="overlay"></div>
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-5">
+            <img class="persona-img" src="Img/ESV/Landing_Slider/Gloria_img.png" alt="Retrato de NOMBRE 5">
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="content">
+              <div class="content-top">
+                <a class="content-top__cta-img" href="testimonios.html" aria-label="Conocer su historia">
+                  <img src="assets/historias/botones/btn-conocer.jpg" alt="Conocer su historia">
+                </a>
+              </div>
+              <h3 class="persona-nombre">Gloria Martínez</h3>
+              <p class="persona-desc">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed eros non eros tincidunt scelerisque. Etiam id neque quam. Cras non pretium nulla”.</p>
+              <div class="content-actions">
+                <button class="btn-audio-img" aria-pressed="false" aria-label="Activar audio">
+                  <img class="icon-play"  src="assets/historias/botones/btn-audio-play.jpg"  alt="Reproducir">
+                  <img class="icon-pause" src="assets/historias/botones/btn-audio-pause.jpg" alt="Pausar">
+                </button>
+              </div>
+              <audio preload="none"></audio>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ========== SLIDE 6 ========== -->
+      <article class="slide"
+               data-bg="Img/ESV/Landing_Slider/BG.png"          
+               data-audio="assets/historias/audios/testimonio-6.mp3">
+        <div class="overlay"></div>
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-5">
+            <img class="persona-img" src="Img/ESV/Landing_Slider/Idali_img.png" alt="Retrato de NOMBRE 6">
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="content">
+              <div class="content-top">
+                <a class="content-top__cta-img" href="testimonios.html" aria-label="Conocer su historia">
+                  <img src="assets/historias/botones/btn-conocer.jpg" alt="Conocer su historia">
+                </a>
+              </div>
+              <h3 class="persona-nombre">Idalí Garcera</h3>
+              <p class="persona-desc">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed eros non eros tincidunt scelerisque. Etiam id neque quam. Cras non pretium nulla”.</p>
+              <div class="content-actions">
+                <button class="btn-audio-img" aria-pressed="false" aria-label="Activar audio">
+                  <img class="icon-play"  src="assets/historias/botones/btn-audio-play.jpg"  alt="Reproducir">
+                  <img class="icon-pause" src="assets/historias/botones/btn-audio-pause.jpg" alt="Pausar">
+                </button>
+              </div>
+              <audio preload="none"></audio>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ========== SLIDE 7 ========== -->
+      <article class="slide"
+               data-bg="Img/ESV/Landing_Slider/BG.png"          
+               data-audio="assets/historias/audios/testimonio-7.mp3">
+        <div class="overlay"></div>
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-5">
+            <img class="persona-img" src="Img/ESV/Landing_Slider/Jacq_img.png" alt="Retrato de NOMBRE 7">
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="content">
+              <div class="content-top">
+                <a class="content-top__cta-img" href="testimonios.html" aria-label="Conocer su historia">
+                  <img src="assets/historias/botones/btn-conocer.jpg" alt="Conocer su historia">
+                </a>
+              </div>
+              <h3 class="persona-nombre">Jacqueline Castillo</h3>
+              <p class="persona-desc">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed eros non eros tincidunt scelerisque. Etiam id neque quam. Cras non pretium nulla”.</p>
+              <div class="content-actions">
+                <button class="btn-audio-img" aria-pressed="false" aria-label="Activar audio">
+                  <img class="icon-play"  src="assets/historias/botones/btn-audio-play.jpg"  alt="Reproducir">
+                  <img class="icon-pause" src="assets/historias/botones/btn-audio-pause.jpg" alt="Pausar">
+                </button>
+              </div>
+              <audio preload="none"></audio>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="slider-dots" aria-label="Indicadores de diapositivas" role="tablist"></div>
+    </div><!-- /slides -->
+  </div><!-- /container -->
+</section>
+<!-- =================== /CONOCE SUS HISTORIAS (Slider) =================== -->
+
+
 
     <!-- Seccion DataVis -->
 
@@ -296,5 +542,6 @@
     <script src="Js/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Js/menu.js"></script>
+    <script src="Js/historias.js"></script>
 </body>
 </html>
