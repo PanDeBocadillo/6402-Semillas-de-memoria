@@ -26,37 +26,22 @@
         <div id="Retrato-madre">
 
           <img src="Img/Retrato-Ana-Paez.png" alt="Retrato de Madre" class="img-fluid" >
+          <audio class="audio-amb" controls loop src="/Sound/Audio-Ana-Paez.mp3"></audio> 
 
         </div>
 
     </section>
     <section id="Quien-soy">
+        <h2 class=" tituloTres fw-bold w-75">LA HIJA DEL SOL</h2>
       <div class="container-fluid px-5">
         <div class="row  ">
           <div class="col">
-            <p>Me llamo Ana Páez y nací el 5 de septiembre de 1952 en Sogamoso, Boyacá, justo sobre la catedral de la ciudad. Crecí en la “Ciudad del Sol”, territorio sagrado para el pueblo Muisca, donde durante siglos se honró al sol y se cultivó una cultura llena de espiritualidad, saber agrícola y tradición. En esas tierras estaba el templo del Sol, destruido en la conquista, pero vivo aún en la memoria y las raíces de nuestra gente.
-                Mis tíos encontraron allí tesoros antiguos de los Muiscas; con ellos compraron mulas, carros y levantaron sus casas. 
-                No era solo riqueza material: era un hilo que nos ataba a la historia y a la identidad de nuestro pueblo.
-                De niña, cuando tenía apenas ocho años, viví la persecución contra la chicha, esa bebida fermentada de maíz o caña que unía a las comunidades y celebraba nuestras raíces. La escondíamos en barriles y ollas enterradas para protegerla. En la finca, molíamos caña para hacer la miel que fermentaba hasta convertirse en chicha. El maíz, además de ser su base, estaba en todo: mi abuela lo ponía hasta en el caldo de ojo. Era nuestro tesoro ancestral.
-                Desde pequeña aprendí a pedir permiso a la tierra, al agua, al aire, y a cantarle al sol. 
-                Era una forma de agradecer y reconocer la fuerza que sostiene la vida. 
-                Esa enseñanza, heredada de los Muiscas, me unió para siempre a la naturaleza y a mis ancestros.
-                Así nació mi amor por la cocina. Para mí, cocinar no era solo preparar alimentos: era un ritual para honrar a quienes nos precedieron y a la tierra que nos alimenta. 
-                En cada plato iba el sabor de la historia, el cariño de mi familia y la memoria viva de mi pueblo.
-                Más adelante, la vida me llevó a abrir mi propio restaurante, allá en el kilómetro 28 de la vía a La Mesa. Un sitio sencillo, pero lleno de sabor y calor de hogar. 
-                Lo bauticé “El Zapatazo” por una historia graciosa: un día llegaron unos extranjeros, comieron felices y se fueron, pero dejaron olvidados unos zapatos enormes. 
-                Yo los colgué en la entrada, y desde entonces todos comenzaron a decir: “vamos al Zapatazo”.
-            </p>
-          </div>
+            <p>Nací el 5 de septiembre de 1952 en Sogamoso, Boyacá, justo encima de la catedral.<br> <br> Crecí en la Ciudad del Sol, un lugar con historia. Allá, la gente todavía habla de los muiscas y del Templo del Sol, que los españoles destruyeron, pero que sigue vivo en la memoria. Mis tíos encontraron piezas antiguas en la tierra: figuras, vasijas, adornos. Con eso compraron mulas, carros y construyeron sus casas. No era solo oro viejo: era parte de lo que éramos. </p>
+            <button id="hoverBotones"  type="button " class="btn btn-outline-light  " onclick="openPopup('popup1')" >Leer Mas <i class="fas fa-arrow-right ms-2"></i></button>
+            
+        </div>
           <div class="col">
-            <p>Con el tiempo, el lugar ganó otro nombre que me llenaba de orgullo: “La Arepa Quesuda de la Mona”. 
-                Era por mi cabellera rubia y por esas arepas generosas, llenas de queso, que servía siempre calientes. 
-                La gente venía de lejos, y cuando el alcalde visitaba el pueblo, era tradición que su primera parada fuera en mi mesa.
-                Mi plato estrella era la gallina criolla, cocinada despacio, con papa, plátano, yuca, rellena y un guacamole que todos decían que era la gloria. 
-                Los clientes se iban diciendo que en ningún otro lado habían probado una gallina igual, y esas palabras se quedaban conmigo como un premio al esfuerzo.
-                Con los años, tuve que cerrar el restaurante, pero su recuerdo sigue vivo en mí y en todos los que se sentaron a mi mesa. 
-                Cada bocado que sirvió “El Zapatazo” llevaba un pedazo de nuestra cultura, el amor por lo nuestro y la alegría de compartir.
-            </p>
+        
             <div class="row">
                 <div class="col">
                     <img src="Img/imagen-Ana-Paez (3).png" alt="anapaez1" class="img-fluid" >
@@ -70,6 +55,32 @@
             </div>
           </div>
         </div>
+        <div class="popup" id="popup1">
+                <div class="row">
+                    <button onclick="closePopup('popup1')"><img src="/Img/top-popup-anapaez.png" alt="imagen top-Ana-Paez" class="img-fluid"></button>
+                
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p><br><br>
+                            Nací el 5 de septiembre de 1952 en Sogamoso, Boyacá, justo encima de la catedral. Crecí en la Ciudad del Sol, un lugar con historia. Allá, la gente todavía habla de los muiscas y del Templo del Sol, que los españoles destruyeron, pero que sigue vivo en la memoria. Mis tíos encontraron piezas antiguas en la tierra: figuras, vasijas, adornos. Con eso compraron mulas, carros y construyeron sus casas. No era solo oro viejo: era parte de lo que éramos.<br> <br> 
+                            De niña me tocó vivir la persecución contra la chicha. Era una bebida prohibida, pero nadie quería dejarla. En la finca la escondíamos en ollas enterradas para que no la botaran. Molíamos caña para hacer miel, y el maíz estaba en todo. Mi abuela lo ponía hasta en el caldo de ojo. De ella aprendí a pedir permiso antes de sembrar, a respetar el agua y a no jugar con el fuego.<br> <br> 
+                            Con el tiempo me dediqué a la cocina. No por romanticismo, sino porque era lo que sabía hacer bien. Empecé vendiendo comidas sencillas, y más adelante abrí un restaurante en el kilómetro 28 de la vía a La Mesa. Lo llamé El Zapatazo por una casualidad: unos extranjeros comieron un día, se fueron contentos y dejaron olvidados unos zapatos enormes. Los colgué en la entrada, y el nombre se quedó.<br> <br> 
+                            Después la gente lo empezó a llamar La Arepa Quesuda de la Mona, por mi pelo claro y por las arepas que servía, siempre grandes y llenas de queso. También hacía gallina criolla, cocinada despacio, con papa, plátano, yuca y un guacamole que la gente pedía por nombre. Venían de lejos a comer. A veces hasta el alcalde pasaba primero por mi mesa antes de ir al pueblo.No me hice rica, pero vivía bien. Me gustaba el trabajo, la gente, ver el restaurante lleno. Con el tiempo abrí otro negocio, y ahí trabajaba con mi hijo Eduardo. Él era responsable, serio, no tomaba ni se metía en problemas. Desde pequeño fue así.
+                        </p>
+
+                    </div>
+                    <div class="col">
+                        <p><br><br>
+                            Con el tiempo, el lugar ganó otro nombre que me llenaba de orgullo: “La Arepa Quesuda de la Mona”. Era por mi cabellera rubia y por esas arepas generosas, llenas de queso, que servía siempre calientes. La gente venía de lejos, y cuando el alcalde visitaba el pueblo, era tradición que su primera parada fuera en mi mesa.
+                            Mi plato estrella era la gallina criolla, cocinada despacio, con papa, plátano, yuca, rellena y un guacamole que todos decían que era la gloria. Los clientes se iban diciendo que en ningún otro lado habían probado una gallina igual, y esas palabras se quedaban conmigo como un premio al esfuerzo.
+                            Con los años, tuve que cerrar el restaurante, pero su recuerdo sigue vivo en mí y en todos los que se sentaron a mi mesa. Cada bocado que sirvió “El Zapatazo” llevaba un pedazo de nuestra cultura, el amor por lo nuestro y la alegría de compartir.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
     </div>
     </section>
     <section id="la-vida-con-mi-hijo">
@@ -88,24 +99,9 @@
             </div>
             <div class="col">
                 <p>
-                    En 1975 la vida me regaló la noticia más esperada: estaba embarazada de mi hijo, Eduardo Garzón Páez. 
-                    Lo soñé, lo deseé con todo el corazón, y esos meses se convirtieron en una espera hermosa que me cambió para siempre. 
-                    Eduardo nació en la Clínica Veracruz, en el barrio Teusaquillo de Bogotá (confirmar), un día que parecía hecho para él: 
-                    el día del amor y la amistad, a las tres de la tarde.Recuerdo cada instante de aquel día. 
-                    Mientras el parto avanzaba, yo solo pedía que no me hicieran cesárea. 
-                    En ese tiempo había temor, había mitos, y yo quería que mi hijo llegara al mundo por parto natural. 
-                    Fueron horas de dolor y esfuerzo, pero también de una fuerza que solo conocemos las mujeres en ese momento. 
-                    Y es que en cuanto tuve a mi hijo en brazos, todo se borró: 
-                    no quedaba rastro del dolor, solo el amor más grande y la alegría de saberme madre.
-                    Eduardo fue el segundo de mis tres hijos —dos niñas y él—, y desde pequeño mostró una disciplina que llamaba la atención. 
-                    A los cuatro años entró a la Escuela Mariscal Sucre, donde estudió toda su primaria y bachillerato (confirmar). 
-                    Creció siendo responsable, firme en sus compromisos, cualidades que lo acompañarían toda su vida.
-                    A los 17 años tomó una decisión que me llenó de orgullo y de miedo: ingresar al Ejército Nacional. 
-                    Su entrega y sentido del deber lo llevaron a ser Brigadier Mayor (confirmar tiempo), un cargo que hablaba de su liderazgo y compromiso. 
-                    Más tarde, su amor por la justicia lo llevó a estudiar Derecho, convencido de que podía servir y proteger de otra manera.
-                    En esos años, yo seguía luchando por mi familia. Tenía un negocio de piscinas en Villeta (confirmar fecha) que atendía con empeño. 
-                    Eduardo, siempre dispuesto, me acompañaba y ayudaba. Ahí, entre el sol y las tareas diarias, aprendió el valor del trabajo, la constancia y la responsabilidad. 
-                    Todo eso que, como madre, yo quería que mis hijos llevaran siempre en el corazón.
+                    Eduardo nació en Bogotá, en la Clínica Veracruz, un día del amor y la amistad, a las tres de la tarde. Lo esperé con ilusión, como se espera lo que una sabe que le va a cambiar la vida. Fue el segundo de mis cuatro hijos, y desde niño se notaba distinto. Estudió en la Escuela Mariscal Sucre, donde se graduó como Brigadier Mayor del colegio. Más adelante quiso estudiar Derecho. Decía que quería ayudar a la gente que no tenía cómo defenderse, a los presos políticos, a los que nadie escuchaba.<br><br>
+
+Yo tenía un negocio de piscinas en Villeta, La Rondinela, y él siempre me ayudaba. A veces trabajábamos hasta tarde, pero no se quejaba. Era cumplido y trabajador, no conocía la pereza. Siempre me sentí tranquila con él.
 
 
                 </p>
@@ -119,15 +115,161 @@
         <h2 class=" tituloTres fw-bold w-75">EL DÍA EN QUE MI MUNDO <br> SE PARTÍO EN DOS</h2>
         <div class="row  ">
           <div class="col">
-            <p>Eran las siete y treinta de la mañana y Eduardo no había llegado a trabajar, teníamos como cinco años? Manejando otro negocio, un restaurante, y Eduardo nunca había llegado tarde en la vida, nos habíamos despedido a las dos de la mañana y con un beso le dije: “papito cuidado, acuérdese que mañana hay que madrugar a trabajar”, y Eduardo nunca llegaba tarde: un frío recorrió mi cuerpo, ya no me hallaba, uno tiene intuición.Esa mañana Alondra, una de las niñas que trabajaba conmigo me vio mientras me fumaba un cigarrillo en la puerta del restaurante y me preguntó si yo quería que me lo leyera; aceptè́, y al fumar y ver qué había en el cigarrillo, vi una cruz, a lo que ella respondió que debía prepararme porque algo difícil iba a pasar en mi vida, se venían malas noticias.Teníamos nuestro restaurante en la Escuela de Seguridad Vial de la Policía Nacional, ese día salí más temprano que nunca; siempre era la primera que llegaba, y la última que salía, pues los antiguerrilla llegaban tarde y había que darles de comer.Cuando entré en casa, lo primero que vi fue la foto de él en la pared, un plato con una cacerola de huevo en la mesa, vacío, su anillo de graduación y la imagen de la virgen del Carmen? Con una veladora al pie, era el 5 de marzo de 2008.Desde ahí mi vida se pasó entre un lugar y otro buscándolo, todo se partió en dos. Recuerdo que empecé a ir a la iglesia a escuchar profecía, y cierto día me dicen que mi muchacho está en paz y que estaba con Dios; yo di las gracias, era lo que yo quería saber después de cinco meses de búsqueda, que mi hijo estaba en paz.Más tarde recibí en la casa una llamada fría, desnuda y rapaz que me decía que tenía que acercarme a la morgue en Bogotá porque parecía que habían encontrado a mi hijo. Yo grité, mi chiquito Jonathan gritó conmigo-yo por eso adoro a ese niño, porque pasó siempre a mi lado-; yo no sabía qué hacer, a mi todo se me olvidó.
-            </p>
+            <img src="/Img/Eduardo-anapaez.png" alt="retrato eduardo garzon" class="img-fluid" >
           </div>
           <div class="col">
-            <p>Llegó mi familia y yo solo pude ir a la morgue hasta las tres de la mañana, no tenía fuerzas. Cuando llegué allá, creí que lo iba a ver, que me iban a mostrar el cuerpo pero me lo mostraron en un computador, frente a otros muchachos, me preguntaron si ahí estaba Eduardo y ahí estaba mi muchacho.Era el 29 de agosto de 2008 y mi muchacho estaba en Cimitarra, no entendía por qué, me preguntaba todo, por qué, pero no hice más que coger carretera y salir a encontrarme con mi hijo. Cuando llegué allá recuerdo que lo toqué y lo sentí como gelatina; cuando lo vi reconocí el candado que tenía como barba, era mi Eduardo definitivamente.
+            <p>Desde ahí mi vida se pasó entre un lugar y otro, buscándolo; todo se partió en dos. Recuerdo que empecé a ir a la iglesia a escuchar profecía, y cierto día el predicador me dijo que mi muchacho está en paz y que estaba con Dios; yo di las gracias. Era lo que yo quería saber después de cinco meses de búsqueda: que mi hijo estaba en paz.
             </p>
+            <button id="hoverBotones"  type="button " class="btn btn-outline-light  " onclick="openPopup('popup2')">Leer Mas <i class="fas fa-arrow-right ms-2"></i></button>
             <img src="Img/Diente de Leon 1.png" alt="anapaez1" class="img-fluid" >
           </div>
         </div>
+        <!-- ========== POPUP 2 ========== -->
+        <div class="popup" id="popup2">
+                <div class="row">
+                    <button onclick="closePopup('popup2')"><img src="/Img/top-popup-anapaez.png" alt="imagen top-Ana-Paez" class="img-fluid"></button>
+                
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p> <br><br>
+                            Eran las siete y treinta de la mañana y Eduardo no había llegado a trabajar; teníamos como cinco años manejando otro negocio, un restaurante. Eduardo nunca había llegado tarde en la vida. Nos habíamos despedido a las dos de la mañana y, con un beso, le dije: “Papito, cuidado, acuérdese que mañana hay que madrugar a trabajar”. Eduardo nunca llegaba tarde, un frío recorrió mi cuerpo, ya no me hallaba; una tiene intuición.<br><br>
+
+                            Esa mañana, Carolina, una de las niñas que trabajaba conmigo, me vio mientras me fumaba un cigarrillo en la puerta del restaurante y me preguntó si quería que me lo leyera. Acepté, y al fumar y ver qué había en el cigarrillo, vi una cruz, a lo que ella respondió que debía prepararme porque algo difícil iba a pasar en mi vida. Se venían malas noticias.<br><br>
+
+                            Teníamos nuestro restaurante en la Escuela de Seguridad Vial de la Policía Nacional. Ese día salí más temprano que nunca; siempre era la primera que llegaba y la última que salía, pues los antiguerrilla llegaban tarde y había que darles de comer.<br><br>
+
+                            Cuando entré en casa, me di cuenta que él había estado allí. Lo primero que vi fue la foto de él en la pared; un plato con una cacerola de huevo en la mesa, vacío; su anillo de graduación y la imagen de la Virgen de Santa Marta con una veladora al pie, y la Biblia sobre la mesa. Era el 4 de marzo de 2008.<br><br>
+
+                            Desde ahí mi vida se pasó entre un lugar y otro, buscándolo; todo se partió en dos. Recuerdo que empecé a ir a la iglesia a escuchar profecía, y cierto día el predicador me dijo que mi muchacho está en paz y que estaba con Dios; yo di las gracias. Era lo que yo quería saber después de cinco meses de búsqueda: que mi hijo estaba en paz.<br>
+                        </p>
+
+                    </div>
+                    <div class="col">
+                        <p><br><br>
+                            Habían pasado cinco meses y ese día recibí en la casa una llamada fría, desnuda y rapaz que me decía que tenía que acercarme a la morgue en Bogotá porque parecía que habían encontrado a mi hijo. Yo grité; mi chiquito Jonathan gritó conmigo —yo por eso adoro a ese niño, porque siempre estuvo a mi lado—. Yo no sabía qué hacer, a mí todo se me olvidó.<br><br>
+
+                            Llegó mi familia y solo pude ir a la morgue hasta las tres de la mañana; no tenía fuerzas. Cuando llegué allá, creí que lo iba a ver, que me iban a mostrar el cuerpo, pero me lo mostraron en un computador, frente a otros muchachos. Me preguntaron si ahí estaba Eduardo, y ahí estaba mi hijo.<br><br>
+
+                            Era el 29 de agosto de 2008 y Eduardo estaba en Cimitarra. No entendía por qué, me preguntaba todo, “¿por qué?”, pero no hice más que coger carretera y salir a encontrarme con mi hijo. Cuando llegué allá, recuerdo que lo toqué y lo sentí como gelatina; cuando lo vi, reconocí el candado que tenía como barba. Era mi Eduardo, definitivamente.<br><br>
+
+                            Fueron días de infierno, pasaron muchas cosas: desenterramos a mi hijo en un cementerio de Cimitarra; me dijeron que era guerrillero y que había muerto en combate, pero cuando vi el archivo me enteré de que tenía las botas al revés y aparecía con una mochila, un arma y una granada. Mi hijo nunca usaba mochilas, ni era hombre de guerra; trabajaba conmigo en el restaurante y era estudiante de Derecho.<br>
+                        </p>
+                        <button id="hoverBotones"  type="button " class="btn btn-outline-light  " onclick="openPopup('popup3'),closePopup('popup2')"  >Leer Mas <i class="fas fa-arrow-right ms-2"></i></button>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- ========== POPUP 3 ========== -->
+             <div class="popup" id="popup3">
+                <div class="row">
+                    <button onclick="closePopup('popup3')"><img src="/Img/top-popup-anapaez.png" alt="imagen top-Ana-Paez" class="img-fluid"></button>
+                
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p> <br><br>
+                            Cuando nos mostraron el camuflado que tenía debajo de la cabeza, no tenía los tres tiros que le habían dado en su cuerpo, pero sí tenía sangre. Nos dijeron que tenían que quemar el cajón en el que estaba para llevárnoslo en otro. Así que lo incineraron y tuvimos que llevar a mi hijo de regreso a Bogotá el día de mi cumpleaños, el 5 de septiembre de 2008. Yo le decía: “Papito, usted, que el año pasado me llevó serenata”...<br><br>
+
+                            Esos días se pasaron entre sueño y delirio. Me vi subiendo una montaña con él; él estaba descalzo, sin camisa, yo estaba cansada, pero él me decía que yo podía seguir adelante, llegar a la cima, pero nunca llegaba; la cima estaba muy lejos.<br>
+                        </p>
+                        <h2>LA VIDA SIN EDUARDO</h2>
+                        <P><br><br>
+                            Tuve que enterrarlo. A mí no me había dolido tanto una muerte en mi vida, ni siquiera la de mi esposo, que me había dejado con cuatro niños pequeños a quienes aprendí a levantar y saqué adelante. Ni siquiera esa muerte me había dolido tanto como la de Eduardito; y ni se diga mi mamá, que adoraba a su nieto.
+                            <br>
+                        </P>
+
+                    </div>
+                    <div class="col">
+                        <p><br><br>
+                            A partir de ahí fue el calvario, sin entender nunca qué había pasado, cómo todo eso me había ocurrido, por qué lo habían matado, quién se lo llevó. El sepulturero del pueblo me dijo que el 5 de marzo, el día de la muerte de mi hijo, lo habían visto en el pueblo (Cimitarra), tomando gaseosa con otro muchacho; que un camión del ejército había pasado a recogerlos y ellos se habían subido allí sin ser forzados. A ese señor después lo mataron.<br><br>
+
+                            En el entierro de mi hijo, un periodista me dijo que averiguara en Soacha, que allá podía encontrar pistas, así que fui a la Personería de Soacha y me comentaron que otros muchachos habían desaparecido en circunstancias similares a las de mi hijo. Luego conocí a la esposa del muchacho que estaba con mi hijo, el muchacho con el que lo habían visto tomando gaseosa en Cimitarra.<br><br>
+
+                            El personero de Soacha me ayudó a dar los primeros pasos para denunciar en la Fiscalía, él ya había alertado sobre muchachos que estaban desapareciendo en Soacha y la gente decía que estaba loco. Yo puse la denuncia en la Fiscalía y decidí dejar el caso en Bucaramanga.<br><br>
+
+                            Conocí a Luz Marina Bernal, a la Paisa, a Zoraida: las primeras madres que también habían perdido sus hijos. Ahí, en ese momento, empezó MAFAPO; desde ahí comenzamos a estar juntas en esta lucha. Tengo el periódico que salió en Cimitarra diciendo: “Primeros falsos positivos hallados en Cimitarra”. Ya se había desatado el escándalo.<br>
+
+
+
+
+
+                        </p>
+                        <button id="hoverBotones"  type="button " class="btn btn-outline-light  " onclick="openPopup('popup4'),closePopup('popup3')" >Leer Mas <i class="fas fa-arrow-right ms-2"></i></button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- ========== POPUP 4 ========== -->
+             <div class="popup" id="popup4">
+                <div class="row">
+                    <button onclick="closePopup('popup4')"><img src="/Img/top-popup-anapaez.png" alt="imagen top-Ana-Paez" class="img-fluid"></button>
+                
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p> <br><br>
+                            La primera audiencia que tuve fue con Kelly, la esposa de Andrés, el amigo con quien habían matado a mi hijo. Tuve que viajar a Bucaramanga desde Bogotá —muchas veces sin un peso—. Durante esa primera audiencia tuve que dormir algunas veces en el parque central porque no tenía con qué pagar un hotel; había perdido mi restaurante. Desde el momento en que mi hijo desapareció, mi vida se detuvo; no pude volver a trabajar. Me dediqué a encontrar la verdad sobre lo que había pasado; era un trabajo de tiempo completo.<br><br>
+
+                            Un día, en el barrio San Cristóbal, en Bogotá, una señora me comentó que había visto el cuerpo de mi hijo en Cimitarra. Ella era de allá y vivía allá cuando pasaron esas cosas; estábamos en un encuentro de víctimas y ella lo había visto. Me dijo que se enteró de que había un reclutador que se había llevado a los muchachos al ejército; a él le habían pagado por eso.<br><br>
+
+                            Hay que decir que, de todas formas, hubo gente muy buena en el camino. Unos abogados de una ONG nos ayudaron mucho en todo esto; siempre acompañaron nuestras audiencias desde 2008. Nosotras empezamos a organizarnos para luchar por nuestros hijos, ya nos habían utilizado muchos congresistas y periodistas, pero nadie nos ayudaba a encontrar a nuestros muchachos. Hicimos el registro de la organización en el 2016, después de nueve años de andar de un lado para otro sin poder resolver nada.<br>
+                        </P>
+
+                    </div>
+                    <div class="col">
+                        <p><br><br>
+                            Tuve que subir una vez con la Sijín, como a las dos de la mañana, a reconocer el lugar donde habían ejecutado a mi hijo. Se hizo toda la reconstrucción del hecho; me enteré de que a mi hijo no lo habían matado ahí, que ahí lo habían enterrado. Tomé algo de la tierra que había en esa montaña.<br><br>
+
+                            Las madres me acompañaron a muchas de las audiencias, el día de la audiencia final, un informante identificó a los responsables; ellos señalaban en fotografías a las personas que habían asesinado; señalaron a mi hijo y a otro muchacho diciendo: “Estos son los míos”. Pensé: “Dizque los míos, malditos”.<br><br>
+
+                            Lo bonito de todo eso fue que, en la plaza de Bucaramanga, ese día había como 3 000 víctimas acompañándome. Aquella plaza en la que tuve que dormir a la intemperie un día, estaba llena de bombas blancas.<br><br>
+
+                            Mi recompensa fue demostrar que mi hijo no era un guerrillero. A los culpables les dieron hasta 28 años de cárcel. Había 8 oficiales del Ejército involucrados: un coronel, un sargento, soldados profesionales y otros rasos.<br><br>
+
+                            Luego llegó el proceso de paz y aparecieron la Comisión de la Verdad y la JEP. Me gustó que la Comisión de la Verdad logró reconstruir algo de lo que había pasado. Mi hijo había estado en el terminal de transportes; encontraron el billete de bus a su nombre. Me di cuenta de que los responsables habían engañado mucho a la justicia. La Comisión logró la aclaración de algunos hechos, pero nunca logré saber la historia completa.<br>
+                        </p>
+                        <button id="hoverBotones"  type="button " class="btn btn-outline-light  " onclick="openPopup('popup5'),closePopup('popup4')" >Leer Mas <i class="fas fa-arrow-right ms-2"></i></button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <!-- ========== POPUP 5 ========== -->
+             <div class="popup" id="popup5">
+                <div class="row">
+                    <button onclick="closePopup('popup5')"><img src="/Img/top-popup-anapaez.png" alt="imagen top-Ana-Paez" class="img-fluid"></button>
+                
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p> <br><br>
+                            Los responsables no pagaron la condena que habían recibido en la justicia ordinaria, solo cuatro años porque se acogieron a la JEP. Sentí que volví a empezar: habían pasado cinco años en la ordinaria y 18 audiencias. Para mí era increíble; la Comisión nos había prometido la verdad, pero lastimosamente nunca fue posible tenerla completa. Yo no estaba de acuerdo con que ellos salieran, pero me había hecho ilusión saber, al menos, la verdad.<br><br>
+
+                            Luego mi abogado me avisó que habían soltado a los responsables, y ahora lo que me han dicho es que, como no han llegado al subcaso mío, entonces no han tenido audiencias sobre mi caso. Yo quiero que la JEP me muestre a esas personas. ¿A quién voy a perdonar? Tengo la audiencia el 28 y 29 de octubre de 2025 en Cúcuta. Tendremos que vernos de frente y que me pidan perdón.<br><br>
+
+                            Yo digo: ¿Dónde está la reparación para nosotras? Eso es por lo que yo estoy peleando ahora: tener mi vida digna, tener mi muerte digna. Quiero sentir que valió la pena mi lucha, aunque yo sé que el país la reconoce.<br><br>
+
+                            Mi fuerza hoy es la juventud que nunca nos ha dejado solas: estudiantes, muchachos de universidades y colegios, que con sus abrazos nos devuelven la esperanza. Ellos son la prueba de que nuestra lucha no ha sido en vano. Yo seguiré exigiendo que nos reparen con dignidad, que podamos vivir y morir sabiendo que valió la pena no rendirse. Que este país reconozca, no solo con palabras, sino con hechos, que nuestras vidas importan y que la verdad y la justicia no se negocian.<br>
+                        </P>
+
+                    </div>
+                    <div class="col">
+                        <img src="Img/ANAPAEZ7.png" alt="anapaez1" class="img-fluid" >
+
+                    </div>
+
+                </div>
+            </div>
 
     </section>
     <section id="mi-vida-hoy">
@@ -146,15 +288,28 @@
                     En ese fuego y en esas manos, cocinar en comunidad se volvió un acto de resistencia, un gesto sagrado que nos sostuvo y nos dio fuerza para seguir.
 
                 </p>
+                
             </div>
         </div>
     </section>
+    <div class="slider-dots" aria-label="Indicadores de diapositivas" role="tablist"></div>
     <!-- Footer -->
     <script src="Js/formularioEn.js"></script>
     <script src="Js/FireBase-Datos.js"></script>
     <script src="Js/footer.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Js/menu.js"></script>
+    <script>
+        
+        function openPopup(cual){
+            popup=document.getElementById(cual)
+            popup.classList.add("open-popup");
+        }
+        function closePopup(cual){
+            popup=document.getElementById(cual)
+            popup.classList.remove("open-popup");
+        }
+    </script>
 
 </body>
 </html>
