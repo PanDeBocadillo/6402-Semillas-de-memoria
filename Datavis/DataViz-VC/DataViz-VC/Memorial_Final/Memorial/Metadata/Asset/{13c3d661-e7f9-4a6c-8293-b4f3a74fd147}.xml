@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EncodableAsset" id="{13c3d661-e7f9-4a6c-8293-b4f3a74fd147}">
+		<property name="assetPath">
+			<value>Region Andina/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{caf537e6-d35e-4f80-90f5-b8f726650670}</destination>
+		</relationship>
+	</object>
+</objects>

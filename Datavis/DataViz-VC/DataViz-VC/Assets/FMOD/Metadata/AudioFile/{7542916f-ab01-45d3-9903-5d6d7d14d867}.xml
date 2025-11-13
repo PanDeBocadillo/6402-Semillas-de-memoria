@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{7542916f-ab01-45d3-9903-5d6d7d14d867}">
+		<property name="assetPath">
+			<value>Region Andina/Rio/YouTube - YouTube.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>32.136000000000003</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{caf537e6-d35e-4f80-90f5-b8f726650670}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{59e10b66-d81b-4a97-852b-a04d0d6a25fb}">
+		<property name="name">
+			<value>Orinoquia</value>
+		</property>
+		<relationship name="folder">
+			<destination>{bdf95e4e-565b-457c-b04b-50c6179f0111}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{5870d81a-e791-4ef0-b48e-74018925139f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{5870d81a-e791-4ef0-b48e-74018925139f}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Inactiva</value>
+			<value>Activa</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

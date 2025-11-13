@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EncodableAsset" id="{6dc8823e-31eb-4990-82e7-157f1e92e502}">
+		<property name="assetPath">
+			<value>Region Andina/Colibri/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{caf537e6-d35e-4f80-90f5-b8f726650670}</destination>
+		</relationship>
+	</object>
+</objects>
