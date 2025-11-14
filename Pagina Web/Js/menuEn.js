@@ -50,7 +50,7 @@ function crearMenu() {
                             <a id="menutxt" class="nav-link " href="testimonials.html">Listen to their voices</a>
                         </li>
                         <li class="nav-item p-md-2 py-md-1">
-                            <a id="menutxt"  class="nav-link" href="https://nidumar.itch.io/6402">A map of memories</a>
+                            <a id="menutxt"  class="nav-link" href="https://isaias-carriazo.itch.io/prueba-memorial">A map of memories</a>
                         </li>
                         <li class="nav-item p-md-2 py-md-1">
                             <a id="menutxt"  class="nav-link" href="news.html">What was said</a>
