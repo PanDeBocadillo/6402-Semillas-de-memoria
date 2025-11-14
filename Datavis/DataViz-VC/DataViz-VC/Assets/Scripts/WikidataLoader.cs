@@ -598,7 +598,7 @@ public class WikidataLoader : MonoBehaviour
                             // Make the star fully visible if it matches the search query
                             color.a = 1f; // Fully opaque
                             matchingStar = starObject.transform; // Save the matching star
-                            starObject.transform.localScale = Vector3.one * 7.5f; // Scale up the matching star
+                            starObject.transform.localScale = Vector3.one * 15f; // Scale up the matching star
                         }
                         else
                         {
@@ -754,7 +754,7 @@ public class WikidataLoader : MonoBehaviour
                     Material material = renderer.material;
                     Color color = material.color;
                     color.a = isVisible ? 1f : 0f; // Fully opaque or fully transparent
-                    starObject.transform.localScale = isVisible ? Vector3.one * 7.5f : Vector3.one * 0.5f; // Scale up or down
+                    starObject.transform.localScale = isVisible ? Vector3.one * 15f : Vector3.one * 0.5f; // Scale up or down
                     material.color = color;
 
                     if (collider != null)
@@ -954,7 +954,7 @@ public class WikidataLoader : MonoBehaviour
                         Material material = renderer.material;
                         Color color = material.color;
                         color.a = 1f; // Fully opaque
-                        starObject.transform.localScale = Vector3.one * 7.5f; // Scale up the matching star
+                        starObject.transform.localScale = Vector3.one * 15f; // Scale up the matching star
                         material.color = color;
                     }
 
@@ -1119,7 +1119,7 @@ public class WikidataLoader : MonoBehaviour
         }
 
         // Sphere parameters
-        float sphereRadius = 15f; // Radius of the main sphere
+        float sphereRadius = 10f; // Radius of the main sphere
         float clusterSpread = 0.3f; // Spread of objects within the cluster
         float minDistance = 0.5f; // Minimum distance between objects
         int maxObjectsPerCluster = 20;
