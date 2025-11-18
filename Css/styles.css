@@ -803,19 +803,23 @@ p{
 
 .slider-historias .slides {
   
-  overflow: hidden;
-  border-radius: 16px;
-  min-height: 603px; /* ajusta según tu Figma */
+  
+ min-height: 603px; /* or your desired height */
+  height: 100%;
   background: #1d1a18;
 }
 
 .slider-historias .slide {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
   position: absolute;
   inset: 0;
   display: none;
   padding: clamp(20px, 3vw, 36px);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   transition: opacity 500ms ease, transform 600ms ease;
   opacity: 0;
   transform: translateX(3%);
@@ -951,7 +955,7 @@ p{
 
 @media (max-width: 575.98px) {
   .slider-historias .slides { min-height: 680px; }
-  .slider-historias .slider-arrow { width: 40px; height: 40px; }
+  .slider-historias .slider-arrow { display: none; }
 }
 
 /* Contenedor para posicionar el nombre sobre la imagen */
