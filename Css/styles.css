@@ -1013,8 +1013,8 @@ p{
 }
 .audio-amb{
   float: right;
-  margin-right: 26rem;
-  margin-top: -25rem;
+  margin-right: 20%;
+  margin-top: -20%;
   border-width: 3px;
 }
 
@@ -1050,6 +1050,8 @@ p{
   transform: translate(-50%,-50%) scale(0.1);
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 .open-popup{
   visibility: visible;
