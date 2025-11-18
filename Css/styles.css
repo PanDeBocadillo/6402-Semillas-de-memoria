@@ -804,7 +804,7 @@ p{
 .slider-historias .slides {
   
   
- min-height: 603px; /* or your desired height */
+  min-height: 603px; /* or your desired height */
   height: 100%;
   background: #1d1a18;
 }
@@ -927,7 +927,7 @@ p{
   transition: transform .2s ease, background .2s ease;
   background-color: #836857 ;
   border: #836857;
-}
+} 
 .slider-historias .slider-arrow:hover { transform: scale(1.04); }
 .slider-historias .slider-arrow.left  { left: -10px; }
 .slider-historias .slider-arrow.right { right: 40px; }
@@ -949,12 +949,12 @@ p{
 
 /* Responsivo */
 @media (max-width: 991.98px) {
-  .slider-historias .slides { min-height: 620px; }
+  .slider-historias .slides { min-height: 900px; }
   .slider-historias .persona-desc { max-width: 70ch; }
 }
 
 @media (max-width: 575.98px) {
-  .slider-historias .slides { min-height: 680px; }
+  .slider-historias .slides { min-height: 800px; }
   .slider-historias .slider-arrow { display: none; }
 }
 
