@@ -825,6 +825,7 @@ p{
   display: block;
   opacity: 1;
   transform: translateX(0);
+  
 }
 
 .slider-historias .slide .overlay {
@@ -967,7 +968,6 @@ p{
   width: 100%;
   max-height: 500px;
   position: relative;
-  margin-bottom: -24rem;
 }
 
 /* Nombre sobrepuesto (abajo-izquierda por defecto) */
@@ -1005,7 +1005,6 @@ p{
 }
 .content-top__cta-img{
   padding-right: 5rem;
- 
 }
 /*==================================================================================pagina de madres MAFAPO*/
 #Retrato-madre{
