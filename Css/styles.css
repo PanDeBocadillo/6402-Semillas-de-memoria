@@ -1047,6 +1047,7 @@ p{
   padding: 15px;
   position: fixed;
   width: 90%;
+  max-width: 100%;
   background-color:#4B3D33 ;
   border-radius: 20px;
   top: 0;
