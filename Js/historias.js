@@ -69,6 +69,8 @@ if (dotsBox) {
   slides.forEach(s => {
     const btn = s.querySelector('.btn-audio');
     const audio = s.querySelector('audio');
+    if (audio.onplay){stopAutoplay();}
+    if (audio.onpause){startAutoplay();}
     if (!(btn && audio)) return;
 
     btn.addEventListener('click', () => {
@@ -76,6 +78,8 @@ if (dotsBox) {
       if (pressed) {
         audio.pause();
         btn.setAttribute('aria-pressed', 'false');
+        stopAutoplay();
+        
       } else {
         // detener otros audios
         slides.forEach(ss => {
@@ -83,9 +87,11 @@ if (dotsBox) {
           const b = ss.querySelector('.btn-audio');
           if (a && b && a !== audio) { a.pause(); a.currentTime = 0; b.setAttribute('aria-pressed', 'false'); }
         });
-        audio.play().catch(() => {/* autoplay policy */});
+        audio.play().catch(() => {stopAutoplay();});
+        
         btn.setAttribute('aria-pressed', 'true');
       }
+      
     });
 
     // Si el audio termina, volver el botón a estado "play"
