@@ -1047,7 +1047,7 @@ p{
   padding: 15px;
   position: fixed;
   width: 90%;
-  max-width: 100%;
+  max-width: 90%;
   background-color:#4B3D33 ;
   border-radius: 20px;
   top: 0;
@@ -1056,12 +1056,26 @@ p{
   transition: transform 0.4s, top 0.4s;
   max-height: 80vh;
   overflow-y: auto;
+  margin: 5%;
 }
+
 .open-popup{
-  visibility: visible;
-  top: 50%;
-  transform: translate(0%,-50%) scale(1);
+    margin: 2%;
+    visibility: visible;
+    top: 50%;
+    transform: translate(0%,-50%) scale(1);
+  }
+
+@media (max-width: 575.98px) {
+  .open-popup{
+    margin: 2%;
+    visibility: visible;
+    top: 50%;
+    transform: translate(-20%,-50%) scale(1);
+  }
 }
+
+
 
 
 /* FINAL DE CSS */
