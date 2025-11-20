@@ -124,5 +124,53 @@ if (dotsBox) {
     if (document.hidden) stopAutoplay(); else startAutoplay();
   });
 
+  // --- Add improved touch / swipe support for mobile ---
+  (function addSwipe() {
+    let startX = 0, startY = 0, tracking = false;
+    const THRESHOLD = 40;      // px to consider a swipe
+    const MAX_VERTICAL_RATIO = 0.5; // require horizontal movement to be stronger than this*vertical
+
+    function onStart(e) {
+      const p = e.touches ? e.touches[0] : e;
+      startX = p.clientX;
+      startY = p.clientY;
+      tracking = true;
+    }
+
+    function onMove(e) {
+      if (!tracking) return;
+      const p = e.touches ? e.touches[0] : e;
+      const dx = p.clientX - startX;
+      const dy = p.clientY - startY;
+      // If horizontal movement predominates, prevent vertical scroll so swipe is recognised
+      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 10) {
+        e.preventDefault();
+      }
+    }
+
+    function onEnd(e) {
+      if (!tracking) return;
+      tracking = false;
+      const p = (e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0] : e;
+      const dx = p.clientX - startX;
+      const dy = p.clientY - startY;
+      if (Math.abs(dx) < THRESHOLD) return;
+      if (Math.abs(dx) < Math.abs(dy) * MAX_VERTICAL_RATIO) return; // mostly vertical
+      if (dx < 0) goTo(index + 1); else goTo(index - 1);
+      restartAutoplay();
+    }
+
+    // touch listeners (use passive:false for touchstart/move to allow preventDefault)
+    section.addEventListener('touchstart', onStart, { passive: false });
+    section.addEventListener('touchmove', onMove, { passive: false });
+    section.addEventListener('touchend', onEnd);
+    section.addEventListener('touchcancel', () => tracking = false);
+
+    // pointer fallback for browsers that use pointer events
+    section.addEventListener('pointerdown', (e) => { if (e.pointerType === 'touch') onStart(e); }, { passive: true });
+    section.addEventListener('pointermove', (e) => { if (e.pointerType === 'touch') { onMove(e); } }, { passive: false });
+    section.addEventListener('pointerup',   (e) => { if (e.pointerType === 'touch') onEnd(e); }, { passive: true });
+  })();
+  // --- end swipe support ---
   startAutoplay();
 })();
