@@ -1064,6 +1064,15 @@ p{
     transform: translate(0%,-50%) scale(1);
   }
 
+@media (max-width: 1000px) {
+  .open-popup{
+    margin: 2%;
+    visibility: visible;
+    top: 50%;
+    transform: translate(-10%,-50%) scale(1);
+  }
+  
+}
 @media (max-width: 575.98px) {
   .open-popup{
     margin: 2%;
@@ -1073,6 +1082,8 @@ p{
   }
   
 }
+
+
 
 
 
